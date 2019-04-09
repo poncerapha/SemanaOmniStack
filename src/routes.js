@@ -1,9 +1,10 @@
-const express = require('express');
+const express = require("express");
 
 const routes = express.Router();
 
-routes.get('/teste', (req,res) =>{
-    return res.send('Hello World');
-})
+const BoxController = require("./controllers/BoxController");
+
+
+routes.post("/boxes", BoxController.store);
 
 module.exports = routes;

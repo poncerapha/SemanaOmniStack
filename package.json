@@ -4,7 +4,15 @@
   "main": "index.js",
   "repository": "https://github.com/poncerapha/SemanaOmniStack.git",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
   }
 }
