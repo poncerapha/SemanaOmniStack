@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const Flie = new mongoose.Schema(
+const File = new mongoose.Schema(
     {
         title:{
             type: String,
